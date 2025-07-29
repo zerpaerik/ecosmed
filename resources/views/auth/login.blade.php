@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin | MadreTeresa</title>
+  <title>Admin | Ecosmed</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,7 +26,7 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-    <center><img src="editable.png" class="img-circle elevation-1" alt="User Image" width="250"></center>
+    <center><img src="editable.png" class="elevation-1" alt="User Image" width="200"></center>
 
       <p class="login-box-msg">Complete los datos para iniciar sesión</p>
 
