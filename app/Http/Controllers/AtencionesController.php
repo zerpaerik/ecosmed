@@ -764,6 +764,8 @@ class AtencionesController extends Controller
         $met = MetoPro::where('estatus','=',1)->orderBy('nombre','ASC')->get();
 
         $personal = User::where('estatus','=',1)->where('tipo','=',1)->where('tipo_personal','=','Especialista')->orderBy('name','ASC')->get();
+        
+        $profesionales = User::where('estatus','=',1)->where('tipo','=',1)->where('tipo_personal','=','ProfSalud')->orderBy('name','ASC')->get();
 
 
         if(!is_null($request->pac)){
@@ -774,7 +776,7 @@ class AtencionesController extends Controller
             $res = 'NO';
             }
 
-        return view('atenciones.create', compact('paquetes','personal','ecografias','rayos','otros','analisis','paciente','res','met','salud'));
+        return view('atenciones.create', compact('paquetes','personal','ecografias','rayos','otros','analisis','paciente','res','met','salud','profesionales'));
     }
 
     public function getServicio($id)

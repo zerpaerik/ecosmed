@@ -740,9 +740,9 @@
                   <div class="col-md-2">
                   <label>Especialista</label>
                         <select class="form-control" name="esp_con">
-                          <option value="">Seleccione</option>
-                          @foreach($personal as $p)
-                          <option value="{{$p->id}}">{{$p->lastname}} {{$p->name}}</option>
+                          <option value="">Seleccione</option>  
+                          @foreach($profesionales as $profe)
+                          <option value="{{$profe->id}}">{{$profe->lastname}} {{$profe->name}}</option>
                           @endforeach
                         </select>
                   </div>
