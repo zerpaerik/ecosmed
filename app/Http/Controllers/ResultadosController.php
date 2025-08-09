@@ -921,7 +921,7 @@ class ResultadosController extends Controller
         $informe->setValue('name', $resultados->apellidos. ' '.$resultados->nombres. ' Edad: '.$edad);
         $informe->setValue('descripcion',$resultados->servicio);
         $informe->setValue('date',date('d-m-Y'));  
-        if($resultados->tipo_origen == 2){
+		if($resultados->tipo_origen == 2 || $resultados->tipo_origen == 1){
         $informe->setValue('indicacion',$resultados->id_origen);
         } else {
         $informe->setValue('indicacion','ECOSMED');
@@ -970,8 +970,8 @@ class ResultadosController extends Controller
   
         $informe->setValue('name', $resultados->apellidos. ' '.$resultados->nombres. ' Edad: '.$edad);
         $informe->setValue('descripcion',$resultados->servicio);
-        $informe->setValue('date',date('d-m-Y'));    
-        if($resultados->tipo_origen == 2){
+        $informe->setValue('date',date('d-m-Y'));  
+		if($resultados->tipo_origen == 2 || $resultados->tipo_origen == 1){
           $informe->setValue('indicacion',$resultados->id_origen);
           } else {
           $informe->setValue('indicacion','ECOSMED');
