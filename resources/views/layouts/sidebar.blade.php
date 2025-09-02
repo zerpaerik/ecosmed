@@ -410,6 +410,84 @@
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-bars"></i>
+              <p>
+                Inventario
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+                <a href="{{route('productos.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Productos</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('productosu.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Productos Usados</p>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="{{route('ingproductos.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ingresos</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('central.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Almacen Central</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('productos.recepcion')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Almacen Recepción</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('productos.obstetra')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Almacen Obstetra</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('productos.rayos')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Almacen RayosX</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('productos.laboratorio')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Almacen Laboratorio</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{route('productos.almacen')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Almacen de Productos</p>
+                </a>
+              </li>
+
+              @endif
+
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-money-check-alt"></i>
               <p>
                 Reportes
